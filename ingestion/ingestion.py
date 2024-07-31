@@ -6,12 +6,12 @@ from argparse import ArgumentParser
 
 parser = ArgumentParser(description="Ingest data to Vector database")
 parser.add_argument("--data_path", type=str, required=True, help="Path for documents")
-parser.add_argument("--chunk_size", type=int, default=1000, help="Path for documents")
+parser.add_argument("--chunk_size", type=int, default=1000, help="Chunk Size")
 parser.add_argument(
-    "--chunck_overlap_size", type=int, default=0, help="Path for documents"
+    "--chunck_overlap_size", type=int, default=0, help="Chunk overlap size"
 )
 parser.add_argument(
-    "--collection_name", type=str, required=True, help="Path for documents"
+    "--collection_name", type=str, required=True, help="Collection name"
 )
 args = parser.parse_args()
 

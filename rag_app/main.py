@@ -12,7 +12,7 @@ def home():
 
 
 @app.post("/getanswer")
-def getanswer(query, collection_name="ScienceBook", k=5):
+def getanswer(query, collection_name="collection", k=5):
     """Main module"""
     # retrive contexts from database
     query_context = get_topk_documents(query, collection_name, k)

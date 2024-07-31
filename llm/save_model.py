@@ -5,7 +5,7 @@ import argparse
 parser = argparse.ArgumentParser(description="Save model to local")
 parser.add_argument("--model_id", type=str, required=True, help="Hugging face model id")
 parser.add_argument(
-    "--model_path", type=str, default="./llm/app", help="Hugging face model id"
+    "--model_path", type=str, default="./llm/app", help="Local path to save the model"
 )
 args = parser.parse_args()
 

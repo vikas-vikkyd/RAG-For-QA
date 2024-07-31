@@ -11,8 +11,8 @@ async def lifespan(app: FastAPI):
     tokenizer = AutoTokenizer.from_pretrained("/app/tokenizer", local_files_only=True)
     model = TFAutoModelForSeq2SeqLM.from_pretrained("/app/model", local_files_only=True)
     yield
-    # model.clear()
-    # tokenizer.clear()
+    model.clear()
+    tokenizer.clear()
 
 
 app = FastAPI(title="Predict answer", lifespan=lifespan)
