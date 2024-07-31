@@ -33,4 +33,5 @@ Run start_app.sh from the rag_app folder which will create an endpoint for RAG a
 ## References
 + https://python.langchain.com/v0.2/docs/introduction/
 + https://weaviate.io/developers/weaviate
++ https://huggingface.co/models
 
