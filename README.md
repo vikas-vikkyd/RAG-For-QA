@@ -1,4 +1,7 @@
 # RAG Application
+
+![Alt text](./rag.png)
+
 For this implementation of Retrieval-Augmented Generation we have different components
  
 ## Vector database
